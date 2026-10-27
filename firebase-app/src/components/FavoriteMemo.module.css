@@ -1,0 +1,87 @@
+.memoSection {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.label {
+  display: block;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 700;
+}
+.memoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.input {
+  flex: 1;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 36px;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  color: #111827;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2;
+  resize: vertical;
+}
+.input:focus-visible {
+  outline: 3px solid #bfdbfe;
+  border-color: #2563eb;
+}
+.saveButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 6px;
+  min-height: 36px;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+.saveButton:hover {
+  border-color: #94a3b8;
+  background: #e2e8f0;
+}
+.saveButton:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+.saveButton:disabled {
+  background: #94a3b8;
+  cursor: wait;
+}
+.input:disabled {
+  background: #f8fafc;
+}
+.message {
+  min-height: 1.5em;
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: inherit;
+}

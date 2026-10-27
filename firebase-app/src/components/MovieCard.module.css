@@ -1,0 +1,117 @@
+.card {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: white;
+  margin-bottom: 16px;
+}
+
+.favoriteButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 38px;
+  margin-right: 12px;
+  padding: 8px 15px;
+  border: 1px solid #fda4af;
+  border-radius: 999px;
+  background: #fff;
+  color: #9f1239;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.favoriteButton:hover {
+  background: #fff1f2;
+  border-color: #e11d48;
+  transform: translateY(-1px);
+}
+
+.favoriteButton:focus-visible {
+  outline: 3px solid #fda4af;
+  outline-offset: 3px;
+}
+
+.favoriteIcon {
+  color: #e11d48;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.favorited {
+  border-color: #e11d48;
+  background: #e11d48;
+  color: white;
+}
+
+.favorited .favoriteIcon {
+  color: white;
+}
+
+.favorited:hover {
+  border-color: #be123c;
+  background: #be123c;
+}
+
+.favoriteButton:disabled {
+  border-color: #d1d5db;
+  background: #f3f4f6;
+  color: #6b7280;
+  cursor: not-allowed;
+  transform: none;
+}
+.favoriteButton:disabled .favoriteIcon { color: #9ca3af; }
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cardHeader h2 {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.detailLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 6px;
+  min-height: 36px;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.detailLink:hover {
+  border-color: #94a3b8;
+  background: #e2e8f0;
+}
+
+.detailLink:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
